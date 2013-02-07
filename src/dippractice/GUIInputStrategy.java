@@ -13,6 +13,6 @@ import javax.swing.JOptionPane;
 public class GUIInputStrategy implements InputStrategy {
     @Override
     public void inputMessage(String msg)    {
-       JOptionPane.showMessageDialog(null, msg);
+       msg = JOptionPane.showInputDialog("Enter a message: ");
     }
 }

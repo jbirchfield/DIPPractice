@@ -8,15 +8,15 @@ package dippractice;
  *
  * @author jamesb
  */
-public class MessageService {
-    private OutputStrategy out;
+public class InMsgService {
+    private InputStrategy in;
     private String msg;
     
-    public MessageService(OutputStrategy out)    {
-        this.out = out;
+    public InMsgService(InputStrategy in)    {
+        this.in = in;
     }
     
-    public void outputMessage() {
-        out.outputMessage(msg);
+    public void inputMessage()  {
+        in.inputMessage(msg);
     }
 }

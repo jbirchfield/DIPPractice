@@ -16,7 +16,8 @@ public class ScannerInputStrategy implements InputStrategy{
     @Override
     public void inputMessage(String msg)    {
        Scanner keyboard = new Scanner(System.in); 
-        
+       System.out.print("Enter a message: ");
+       msg = keyboard.nextLine();
     }
     
 }

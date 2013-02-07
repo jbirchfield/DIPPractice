@@ -14,6 +14,11 @@ public class DIPPractice {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+     //   InputStrategy in = new ScannerInputStrategy();
+        InputStrategy in = new GUIInputStrategy();
+        InMsgService inmsg = new InMsgService(in);
+        inmsg.inputMessage();
+        
      //   OutputStrategy out = new ConsoleOutputStrategy();
         OutputStrategy out = new GUIOutputStrategy();
         MessageService service = new MessageService(out);
